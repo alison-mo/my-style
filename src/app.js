@@ -1,9 +1,26 @@
 import React from "react";
+import TotalCloset from "./component/closet/TotalCloset.jsx"
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      top: [],
+      bottom: [],
+      dress: [],
+      shoes: [],
+      accessories: [],
+      currentOutfit: {
+        top: "",
+        bottom: "",
+        dress: "",
+        shoes: "",
+        accessory: ""
+      }
+    };
+  }
   render() {
-    const { name } = this.props;
-    return <h1>Hello {name}</h1>;
+    return <h1>Hello </h1>;
   }
 }
 
