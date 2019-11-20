@@ -1,0 +1,32 @@
+.navBar {
+  background-color: lavender;
+}
+.closet-img {
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+}
+.outfit-top {
+  width: 150px;
+}
+.outfit-bottom {
+  width: 150px;
+}
+.outfit-jacket {
+  width: 150px;
+}
+.outfit-shoes {
+  width: 80px;
+  margin: auto;
+}
+.outfit-accessory {
+  width: 80px;
+  margin: auto;
+}
+.closet {
+  height: 700px;
+  overflow: auto;
+}
+.closet-section {
+  font-weight: bold;
+}
