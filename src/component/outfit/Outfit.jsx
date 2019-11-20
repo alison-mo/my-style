@@ -1,32 +1,17 @@
 import React from "react";
+import NoDress from "./NoDress";
+import Dress from "./Dress";
 
-const Outfit = ({ currentOutfit }) => (
-  <div className="col mt-4">
-    <h3>My Outfit</h3>
-    <div className="row mt-2">
-      <div className="col">
-        <img className="outfit-top" src={currentOutfit.top} alt="" />
-      </div>
-      <div className="col">
-        <img className="outfit-jacket" src={currentOutfit.jacket} alt="" />
-      </div>
+const Outfit = ({ currentOutfit, clickDress }) => {
+  return (
+    <div className="col mt-4">
+      {clickDress ? (
+        <Dress currentOutfit={currentOutfit} />
+      ) : (
+        <NoDress currentOutfit={currentOutfit} />
+      )}
     </div>
-    <div className="row mt-2">
-      <div className="col">
-        <img className="outfit-bottom" src={currentOutfit.bottom} alt="" />
-      </div>
-      <div className="col m-auto">
-        <img className="outfit-shoes" src={currentOutfit.shoes} alt="" />
-      </div>
-      <div className="col m-auto">
-        <img
-          className="outfit-accessory"
-          src={currentOutfit.accessory}
-          alt=""
-        />
-      </div>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Outfit;

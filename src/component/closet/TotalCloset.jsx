@@ -11,7 +11,6 @@ const TotalCloset = ({
   handleClickOutfit
 }) => {
   let sections = { top, bottom, dress, jacket, shoes, accessory };
-  console.log(sections);
   return (
     <div className="col mt-4">
       <h3>My Closet</h3>

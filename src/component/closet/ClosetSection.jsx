@@ -5,7 +5,6 @@ const ClosetSection = ({ section, name, handleClickOutfit }) => (
   <div className="mt-3">
     <div className="closet-section">{name}</div>
     <div className="row">
-      {console.log(section, name)}
       {section.map(entry => {
         return (
           <ClosetEntry

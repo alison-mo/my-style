@@ -23,10 +23,19 @@
   width: 80px;
   margin: auto;
 }
+.outfit-dress {
+  width: 150px;
+}
 .closet {
   height: 700px;
   overflow: auto;
 }
 .closet-section {
   font-weight: bold;
+}
+.outfit-shoes-dress {
+  width: 150px;
+}
+.outfit-accessory-dress {
+  width: 150px;
 }

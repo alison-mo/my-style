@@ -9,7 +9,11 @@ const clothes = {
     "https://i.s-madewell.com/is/image/madewell/AA590_DM1895_ld?wid=1400&hei=1779&fmt=jpeg&fit=crop&qlt=75,1&resMode=bisharp&op_usm=0.5,1,5,0",
     "https://aritzia.scene7.com/is/image/Aritzia/large/f19_01_a06_69829_15085_off_a.jpg"
   ],
-  dress: [],
+  dress: [
+    "https://aritzia.scene7.com/is/image/Aritzia/large/f19_01_a08_75945_2346_off_a.jpg",
+    "https://aritzia.scene7.com/is/image/Aritzia/large/f19_01_a08_63296_1274_off_a.jpg",
+    "https://aritzia.scene7.com/is/image/Aritzia/large/f19_04_a08_69786_7325_off_a.jpg"
+  ],
   jacket: [
     "https://aritzia.scene7.com/is/image/Aritzia/hi-res/f19_03_a05_74360_2461_off_a.jpg",
     "https://aritzia.scene7.com/is/image/Aritzia/hi-res/f19_01_a05_73426_16997_off_a.jpg",

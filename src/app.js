@@ -22,14 +22,21 @@ class App extends React.Component {
         jacket: "",
         shoes: "",
         accessory: ""
-      }
+      },
+      clickDress: false
     };
     this.handleClickOutfit = this.handleClickOutfit.bind(this);
   }
   handleClickOutfit(name, entry) {
     let newOutfit = this.state.currentOutfit;
     newOutfit[name] = entry;
-    this.setState({ currentOutfit: newOutfit });
+    if (name === "dress") {
+      this.setState({ clickDress: true, currentOutfit: newOutfit });
+    } else if (name === "top" || name === "bottom") {
+      this.setState({ clickDress: false, currentOutfit: newOutfit });
+    } else {
+      this.setState({ currentOutfit: newOutfit });
+    }
   }
   render() {
     return (
@@ -38,7 +45,10 @@ class App extends React.Component {
           <Navbar.Brand>My Style</Navbar.Brand>
         </Navbar>
         <div className="row">
-          <Outfit currentOutfit={this.state.currentOutfit} />
+          <Outfit
+            currentOutfit={this.state.currentOutfit}
+            clickDress={this.state.clickDress}
+          />
           <TotalCloset
             top={this.state.top}
             bottom={this.state.bottom}
