@@ -26,6 +26,7 @@ class App extends React.Component {
       clickDress: false
     };
     this.handleClickOutfit = this.handleClickOutfit.bind(this);
+    this.handleAddClothes = this.handleAddClothes.bind(this);
   }
   handleClickOutfit(name, entry) {
     let newOutfit = this.state.currentOutfit;
@@ -39,6 +40,7 @@ class App extends React.Component {
     }
   }
   handleAddClothes(type, link) {
+    console.log(type, link);
     let newClothes = this.state[type].slice();
     newClothes.push(link);
     this.setState({
@@ -50,6 +52,9 @@ class App extends React.Component {
       <div className="container">
         <Navbar className="navBar">
           <Navbar.Brand>My Style</Navbar.Brand>
+          <Navbar.Text className="ml-auto">
+            Signed in as: <a href="#login">Alison Mo</a>
+          </Navbar.Text>
         </Navbar>
         <div className="row">
           <Outfit
@@ -64,6 +69,7 @@ class App extends React.Component {
             shoes={this.state.shoes}
             accessory={this.state.accessory}
             handleClickOutfit={this.handleClickOutfit}
+            handleAddClothes={this.handleAddClothes}
           />
         </div>
       </div>
