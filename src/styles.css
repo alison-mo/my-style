@@ -39,3 +39,13 @@
 .outfit-accessory-dress {
   width: 150px;
 }
+.addCloth-button {
+  background-color: lavender;
+  border-color: white;
+  color: black;
+}
+.addCloth-button:hover {
+  background-color: lavender;
+  border-color: white;
+  color: black;
+}

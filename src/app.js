@@ -38,6 +38,13 @@ class App extends React.Component {
       this.setState({ currentOutfit: newOutfit });
     }
   }
+  handleAddClothes(type, link) {
+    let newClothes = this.state[type].slice();
+    newClothes.push(link);
+    this.setState({
+      [type]: newClothes
+    });
+  }
   render() {
     return (
       <div className="container">
